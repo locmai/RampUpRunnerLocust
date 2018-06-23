@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('SCM') {
       steps {
-        sh 'echo "Hello"'
+        echo 'Start cloning'
+        git url: 'https://github.com/locmai/RampUpRunnerLocust.git'
+        echo 'Cloning ended'
       }
     }
   }
